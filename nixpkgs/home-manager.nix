@@ -23,14 +23,18 @@
     ripgrep
     postgresql
     ruby
+    tmux
     python3
     python3Packages.numpy
     du-dust
     btop
-    qbittorrent
   ];
 
+  home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
+
   programs.home-manager.enable = true;
+
+  programs.tmux.enable = true;
 
   programs.ssh = {
     enable = true;
@@ -56,9 +60,6 @@
       enable = true;
       theme = "agnoster";
     };
-  };
-  programs.btop = {
-    enable = true;
   };
 
   programs.fzf = {
