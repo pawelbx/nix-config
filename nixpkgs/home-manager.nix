@@ -28,6 +28,7 @@
     python3Packages.numpy
     du-dust
     btop
+    pandoc
   ];
 
   home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
@@ -66,5 +67,4 @@
     enable = true;
     enableZshIntegration = true;
   };
-
 }
