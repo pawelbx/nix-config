@@ -29,6 +29,7 @@
     du-dust
     btop
     pandoc
+    gnuplot
   ];
 
   home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
