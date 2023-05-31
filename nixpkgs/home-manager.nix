@@ -26,10 +26,11 @@
     tmux
     python3
     python3Packages.numpy
+    python3Packages.pygments
     du-dust
     btop
     pandoc
-    gnuplot
+    xcode-install
   ];
 
   home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
