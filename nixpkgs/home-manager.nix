@@ -31,6 +31,7 @@
     btop
     pandoc
     xcode-install
+    jetbrains-mono
   ];
 
   home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
