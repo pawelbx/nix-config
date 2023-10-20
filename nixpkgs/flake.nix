@@ -2,9 +2,9 @@
   description = "Home Manager flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-22.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-23.05";
     home-manager = {
-      url = "github:nix-community/home-manager/release-22.05";
+      url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -23,14 +23,19 @@
 
     in {
       homeConfigurations = {
-          home = inputs.home-manager.lib.homeManagerConfiguration {
-            system = "aarch64-darwin";
-            homeDirectory = "/Users/pawel";
-            username = "pawel";
-            configuration.imports = [
-              ./home-manager.nix
-            ];
-          };
+        home = inputs.home-manager.lib.homeManagerConfiguration {
+          pkgs = pkgs;
+          modules = [
+            ./home-manager.nix
+            {
+              home = {
+                username = "pawel";
+                homeDirectory = "/Users/pawel";
+                stateVersion = "23.05";
+              };
+            }
+          ];
         };
       };
+    };
 }
