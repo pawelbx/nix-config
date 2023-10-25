@@ -47,6 +47,9 @@
     forwardAgent = true;
     extraConfig = "AddKeysToAgent yes";
   };
+  programs.mpv = {
+    enable = true;
+  };
   programs.zsh = {
     enable = true;
     enableCompletion = false;
