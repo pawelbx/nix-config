@@ -32,6 +32,7 @@
     pandoc
     xcode-install
     jetbrains-mono
+    qbittorrent
     mpv
   ];
 
