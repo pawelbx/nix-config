@@ -2,10 +2,10 @@
   description = "Home Manager flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/release-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/release-24.05";
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager/release-24.05";
     };
   };
 
@@ -31,7 +31,7 @@
               home = {
                 username = "pawel";
                 homeDirectory = "/Users/pawel";
-                stateVersion = "23.11";
+                stateVersion = "24.05";
               };
             }
           ];

@@ -13,7 +13,6 @@
     neofetch
     fzf
     yt-dlp
-    youtube-dl
     powerline-fonts
     tree
     watch
