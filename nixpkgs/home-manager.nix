@@ -1,5 +1,6 @@
-{ config, pkgs, libs, ... }:
+{ config, pkgs, nixpkgs-unstable, libs, ... }:
 {
+
   home.packages = with pkgs; [
     aspell
     aspellDicts.en
@@ -8,11 +9,11 @@
     gnuplot
     gnutar
     git
+    (emacs.override { withNativeCompilation = false; })
     jq
-    emacs
     neofetch
     fzf
-    yt-dlp
+    nixpkgs-unstable.yt-dlp
     powerline-fonts
     tree
     watch
