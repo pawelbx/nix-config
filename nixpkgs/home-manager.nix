@@ -34,6 +34,7 @@
     jetbrains-mono
     qbittorrent
     mpv
+    nodejs_22
   ];
 
   home.file.".aspell.conf".text = "data-dir /Users/pawel/.nix-profile/lib/aspell/";
